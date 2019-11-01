@@ -39,9 +39,11 @@ function getMoveName(argMoveId){
 
 let randomNumber = Math.floor(Math.random() * 3 + 1);
 
-console.log('Wylosowana liczba to: ' + randomNumber);
+    console.log('Wylosowana liczba to: ' + randomNumber);
 
 let argComputerMove = getMoveName(randomNumber);
+
+    console.log(argComputerMove);
 
 /*
 if(randomNumber == 1){
@@ -55,9 +57,11 @@ if(randomNumber == 1){
 
 let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 
-console.log('Gracz wpisał: ' + playerInput);
+    console.log('Gracz wpisał: ' + playerInput);
 
 let argPlayerMove = getMoveName(playerInput);
+    
+    console.log(argPlayerMove);
 
 /*
 if(playerInput == '1'){
