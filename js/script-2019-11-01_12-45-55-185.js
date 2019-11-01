@@ -70,3 +70,4 @@ if(playerInput == '1'){
 */
 
 let argDisplayResult = displayResult(argComputerMove, argPlayerMove);
+console.log(argDisplayResult);
