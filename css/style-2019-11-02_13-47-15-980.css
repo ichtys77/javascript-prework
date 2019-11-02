@@ -10,23 +10,13 @@ body {
   font-size: 24px;
   line-height: 1.7;
   font-family: "Inconsolata", monospace;
-  text-align: center;
+  counter-reset: my-sec-counter;
 }
 
-/* Body */
 .container {
-  display: -ms-flexbox;
-  display: flex;
-  height: 100vh;
   max-width: 1440px;
   padding: 0 20px;
   margin: 0 auto;
-}
-
-/* Splash */
-.splash {
-  max-width: 1000px;
-  margin: auto;
 }
 
 button {
@@ -56,8 +46,6 @@ button:hover {
   color: #3D101D;
 }
 
-#messages {
-  padding: 40px;
-  font-weight: bold;
-}
+/* Body */
+
 /*# sourceMappingURL=style.css.map */

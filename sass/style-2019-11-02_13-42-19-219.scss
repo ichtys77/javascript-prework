@@ -18,27 +18,10 @@ $transition: all 1s;
 body {
 margin: 0;
 color: $color-text;
-font-size: 24px;
+font-size: 18px;
 line-height: 1.7;
 font-family: $font-text;
-text-align: center;
-}
-
-/* Body */
-
-.container {
-    display: flex;
-    height: 100vh;
-    max-width: 1440px;
-    padding: 0 20px;
-    margin: 0 auto;
-}
-
-/* Splash */
-
-.splash {
-    max-width: 1000px;
-    margin: auto;
+counter-reset: my-sec-counter;
 }
 
 button {
@@ -52,14 +35,14 @@ button {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    border-width: 0;
+    border-width: 1px;
     border-style: solid;
     background-position: 100% 0;
     background-size: 300%;
     background-color: $color-text;
     transition: $transition;
     border-color: $color-one;
-    color: $color-light;
+    color: $color-one;
     background-image: linear-gradient(90deg, $color-light 50%, transparent 50%);
 }
 
@@ -68,7 +51,4 @@ button:hover {
     color: $color-text;
 }
 
-#messages {
-    padding: 40px;
-    font-weight: bold;
-}
+/* Body */

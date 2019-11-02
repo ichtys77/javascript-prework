@@ -7,26 +7,10 @@
 body {
   margin: 0;
   color: #3D101D;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.7;
   font-family: "Inconsolata", monospace;
-  text-align: center;
-}
-
-/* Body */
-.container {
-  display: -ms-flexbox;
-  display: flex;
-  height: 100vh;
-  max-width: 1440px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
-/* Splash */
-.splash {
-  max-width: 1000px;
-  margin: auto;
+  counter-reset: my-sec-counter;
 }
 
 button {
@@ -56,8 +40,6 @@ button:hover {
   color: #3D101D;
 }
 
-#messages {
-  padding: 40px;
-  font-weight: bold;
-}
-/*# sourceMappingURL=style.css.map */
+/* Body */
+
+/*# sourceMappingURL=style-2019-11-02_13-43-38-336.css.map */

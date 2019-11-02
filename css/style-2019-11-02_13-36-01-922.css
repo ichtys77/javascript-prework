@@ -6,27 +6,11 @@
 
 body {
   margin: 0;
-  color: #3D101D;
-  font-size: 24px;
+  color: #2590B0;
+  font-size: 18px;
   line-height: 1.7;
   font-family: "Inconsolata", monospace;
-  text-align: center;
-}
-
-/* Body */
-.container {
-  display: -ms-flexbox;
-  display: flex;
-  height: 100vh;
-  max-width: 1440px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
-/* Splash */
-.splash {
-  max-width: 1000px;
-  margin: auto;
+  counter-reset: my-sec-counter;
 }
 
 button {
@@ -40,24 +24,20 @@ button {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  border-width: 0;
+  border-width: 2px;
   border-style: solid;
   background-position: 100% 0;
   background-size: 300%;
-  background-color: #3D101D;
   transition: all 1s;
   border-color: #FC427B;
-  color: #fff;
-  background-image: linear-gradient(90deg, #fff 50%, transparent 50%);
+  color: #FC427B;
+  background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
 }
 
 button:hover {
   background-position: 0 100%;
-  color: #3D101D;
+  color: #FC427B;
 }
 
-#messages {
-  padding: 40px;
-  font-weight: bold;
-}
+/* Body */
 /*# sourceMappingURL=style.css.map */
