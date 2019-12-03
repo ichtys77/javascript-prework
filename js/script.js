@@ -30,26 +30,33 @@
             computerMove = getMoveName(randomNumber),
             playerMove = getMoveName(playerInput);
 
+
         const displayResult = function () {
 
             printMessage('Zagrałem ' + computerMove + ', a Ty ' + playerMove + '.');
 
             if (computerMove == 'kamień' && playerMove == 'papier') {
                 printMessage('Ty wygrywasz!');
+                playerWin();
             } else if (computerMove == 'kamień' && playerMove == 'nożyce') {
                 printMessage('Ja wygrywam!');
+                computerWin();
             } else if (computerMove == 'kamień' && playerMove == 'kamień') {
                 printMessage('Remis!');
             } else if (computerMove == 'papier' && playerMove == 'kamień') {
                 printMessage('Ja wygrywam!');
+                computerWin();
             } else if (computerMove == 'papier' && playerMove == 'papier') {
                 printMessage('Remis!');
             } else if (computerMove == 'papier' && playerMove == 'nożyce') {
                 printMessage('Ty wygrywasz!');
+                playerWin();
             } else if (computerMove == 'nożyce' && playerMove == 'kamień') {
                 printMessage('Ty wygrywasz!');
+                playerWin();
             } else if (computerMove == 'nożyce' && playerMove == 'papier') {
                 printMessage('Ja wygrywam!');
+                computerWin();
             } else if (computerMove == 'nożyce' && playerMove == 'nożyce') {
                 printMessage('Remis!');
             }
@@ -58,9 +65,19 @@
         displayResult(computerMove, playerMove);
     }
 
-    let playerResult = 'test',
-        computerResult = 'test';
+    let playerResult = 0,
+        computerResult = 0;
 
-    printResult(playerResult + ' : ' + computerResult);
+        function playerWin(){
+            let displayPlayerResult = ++playerResult;
+            console.log('Gracz wygrywa!: ', displayPlayerResult);
+        }
+        
+        function computerWin(){
+            let displayComputerResult = ++computerResult;
+            console.log('Komputer wygrywa!: ', displayComputerResult);          
+        }
+
+        // printResult(displayPlayerResult + ' : ' + displayComputerResult);
 
 }
